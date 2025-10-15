@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Collabify — Jembatan Kolaborasi Bisnis</title>
+    <meta name="description" content="Collabify mempermudah pemilik usaha menemukan, berinteraksi, dan berkolaborasi dengan calon mitra bisnis di Indonesia." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="container nav">
+        <a href="#hero" class="brand" aria-label="Beranda Collabify">
+          <span class="brand-mark" aria-hidden="true">C</span>
+          <span class="brand-text">Collabify</span>
+        </a>
+        <nav aria-label="Navigasi utama">
+          <ul class="nav-list">
+            <li><a href="#features">Fitur</a></li>
+            <li><a href="#explore">Eksplor Mitra</a></li>
+            <li><a href="#profile-setup">Setup Profil</a></li>
+          </ul>
+        </nav>
+        <div class="nav-cta">
+          <a class="btn btn-secondary" href="#explore">Jelajahi</a>
+          <a class="btn btn-primary" href="#profile-setup">Mulai</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="hero" class="hero" role="main">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1 class="text-balance">Jembatan Kolaborasi Bisnis di Indonesia</h1>
+          <p class="lead">
+            Collabify mempermudah pemilik usaha untuk menemukan, berinteraksi, dan berkolaborasi
+            dengan mitra yang tepat berdasarkan industri, lokasi, kebutuhan, dan kompetensi.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#profile-setup">Setup Profil Anda</a>
+            <a class="btn btn-ghost" href="#explore">Lihat Mitra Potensial</a>
+          </div>
+          <ul class="hero-points" aria-label="Manfaat utama">
+            <li>Akurasi pencocokan kompetensi</li>
+            <li>Filter cerdas industri & lokasi</li>
+            <li>Pitch yang jelas dan profesional</li>
+          </ul>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <div class="stat">
+            <div class="stat-value">2000+</div>
+            <div class="stat-label">Mitra Terdaftar</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">92%</div>
+            <div class="stat-label">Kecocokan Rata-rata</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">24</div>
+            <div class="stat-label">Kategori Industri</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section id="features" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="text-balance">Fitur yang Membantu Kolaborasi</h2>
+          <p class="muted">Dirancang untuk memperluas jaringan, membangun kemitraan strategis, dan menciptakan ekosistem inklusif.</p>
+        </header>
+        <div class="grid features-grid">
+          <article class="card">
+            <h3>Pencarian Cerdas</h3>
+            <p>Cari mitra berdasarkan industri, lokasi, kebutuhan, dan kompetensi yang spesifik.</p>
+          </article>
+          <article class="card">
+            <h3>Kecocokan Kompetensi</h3>
+            <p>Nilai kompetensi seperti leadership, negosiasi, dan lainnya dengan skala yang jelas.</p>
+          </article>
+          <article class="card">
+            <h3>Pitch Terstruktur</h3>
+            <p>Gunakan contoh pitch profesional atau kustomisasi sesuai kebutuhan Anda.</p>
+          </article>
+          <article class="card">
+            <h3>Profil Kolaboratif</h3>
+            <p>Tambahkan hard skill, soft skill, dan bidang ekspertis, termasuk input custom.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="explore" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="text-balance">Eksplor Mitra & Individu</h2>
+          <p class="muted">Gunakan filter untuk mempersempit hasil dan temukan mitra yang paling relevan.</p>
+        </header>
+
+        <form id="filters" class="filters" aria-label="Filter pencarian mitra">
+          <div class="filters-row">
+            <label>
+              <span class="label">Tipe</span>
+              <select id="filter-type" name="type">
+                <option value="">Semua</option>
+                <option value="company">Perusahaan</option>
+                <option value="person">Orang</option>
+              </select>
+            </label>
+            <label>
+              <span class="label">Industri</span>
+              <select id="filter-industry" name="industry">
+                <option value="">Semua</option>
+                <option>F&B</option>
+                <option>Teknologi</option>
+                <option>Ritel</option>
+                <option>Logistik</option>
+                <option>Keuangan</option>
+                <option>Kreatif</option>
+              </select>
+            </label>
+            <label>
+              <span class="label">Lokasi</span>
+              <select id="filter-location" name="location">
+                <option value="">Semua</option>
+                <option>Jakarta</option>
+                <option>Bandung</option>
+                <option>Surabaya</option>
+                <option>Yogyakarta</option>
+                <option>Bali</option>
+              </select>
+            </label>
+            <label>
+              <span class="label">Kebutuhan</span>
+              <select id="filter-needs" name="needs">
+                <option value="">Semua</option>
+                <option>Pemasaran</option>
+                <option>Distribusi</option>
+                <option>Pendanaan</option>
+                <option>Teknologi</option>
+                <option>Operasional</option>
+              </select>
+            </label>
+            <label>
+              <span class="label">Kompetensi</span>
+              <select id="filter-skill" name="skill">
+                <option value="">Semua</option>
+                <option>Leadership</option>
+                <option>Komunikasi</option>
+                <option>Negosiasi</option>
+                <option>Manajemen Proyek</option>
+                <option>Pemasaran Digital</option>
+                <option>Analisis Data</option>
+                <option>Design Thinking</option>
+              </select>
+            </label>
+          </div>
+          <div class="filters-row">
+            <label class="grow">
+              <span class="label">Cari</span>
+              <input id="filter-search" name="search" type="search" placeholder="Cari nama atau kata kunci..." />
+            </label>
+            <button type="button" id="filters-clear" class="btn btn-ghost">Reset</button>
+          </div>
+        </form>
+
+        <div class="results-head">
+          <div id="results-count" aria-live="polite">0 hasil</div>
+        </div>
+
+        <div id="results" class="grid cards-grid" aria-live="polite" aria-busy="false">
+           Kartu hasil mitra dirender oleh JS 
+        </div>
+      </div>
+    </section>
+
+    <section id="profile-setup" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="text-balance">Setup Profil Bisnis Anda</h2>
+          <p class="muted">Detailkan ide, tulis pitch, tambahkan skill, dan atur tingkat kompetensi.</p>
+        </header>
+
+        <div class="wizard">
+          <div class="wizard-progress" aria-hidden="true">
+            <div id="progress-bar" class="wizard-progress-bar" style="width: 20%"></div>
+          </div>
+
+          <form id="profile-form" novalidate>
+             Step 1: Dasar 
+            <fieldset class="step" data-step="1">
+              <legend class="step-title">1. Informasi Dasar</legend>
+              <div class="grid form-grid">
+                <label class="grow">
+                  <span class="label">Nama Usaha</span>
+                  <input type="text" id="biz-name" placeholder="Contoh: Kopi Nusantara" required />
+                </label>
+                <label>
+                  <span class="label">Industri</span>
+                  <select id="biz-industry" required>
+                    <option value="">Pilih industri</option>
+                    <option>F&B</option>
+                    <option>Teknologi</option>
+                    <option>Ritel</option>
+                    <option>Logistik</option>
+                    <option>Keuangan</option>
+                    <option>Kreatif</option>
+                  </select>
+                </label>
+                <label>
+                  <span class="label">Lokasi</span>
+                  <select id="biz-location" required>
+                    <option value="">Pilih lokasi</option>
+                    <option>Jakarta</option>
+                    <option>Bandung</option>
+                    <option>Surabaya</option>
+                    <option>Yogyakarta</option>
+                    <option>Bali</option>
+                  </select>
+                </label>
+                <label class="grow">
+                  <span class="label">Website (opsional)</span>
+                  <input type="url" id="biz-website" placeholder="https://contoh.com" />
+                </label>
+              </div>
+              <label class="block">
+                <span class="label">Deskripsi Singkat</span>
+                <textarea id="biz-description" rows="5" placeholder="Jelaskan value proposition, target pasar, dan model kolaborasi yang diinginkan..." required></textarea>
+              </label>
+            </fieldset>
+
+             Step 2: Pitch 
+            <fieldset class="step" data-step="2" hidden>
+              <legend class="step-title">2. Pitch</legend>
+              <div class="pitch-examples">
+                <details>
+                  <summary>Contoh Pitch 1 (ringkas)</summary>
+                  <p>
+                    Kami adalah [Nama Usaha], bergerak di [Industri], mencari mitra untuk [Kebutuhan].
+                    Dengan keahlian di [Keahlian Utama], kami menargetkan [Segmen Pasar] dan siap kolaborasi win–win.
+                  </p>
+                </details>
+                <details>
+                  <summary>Contoh Pitch 2 (naratif)</summary>
+                  <p>
+                    Dalam 12 bulan terakhir, kami tumbuh [X%] dengan produk [Produk/Jasa].
+                    Kami mencari mitra [Jenis Mitra] untuk memperkuat [Area], memanfaatkan kompetensi [Kompetensi] agar ekspansi lebih cepat dan terukur.
+                  </p>
+                </details>
+              </div>
+              <label class="block">
+                <span class="label">Pitch Anda</span>
+                <textarea id="biz-pitch" rows="6" placeholder="Tulis pitch Anda di sini..."></textarea>
+              </label>
+            </fieldset>
+
+             Step 3: Skills 
+            <fieldset class="step" data-step="3" hidden>
+              <legend class="step-title">3. Hard Skill & Soft Skill</legend>
+              <div class="grid form-grid">
+                <div>
+                  <h4>Hard Skill</h4>
+                  <div id="hard-skill-pool" class="tag-pool" aria-label="Daftar hard skill yang dapat dipilih"></div>
+                  <div class="add-custom">
+                    <input id="hard-skill-input" type="text" placeholder="Tambah hard skill..." />
+                    <button type="button" id="add-hard-skill" class="btn btn-secondary">Tambah</button>
+                  </div>
+                  <div>
+                    <h5 class="muted">Dipilih</h5>
+                    <div id="hard-skill-selected" class="tag-selected"></div>
+                  </div>
+                </div>
+                <div>
+                  <h4>Soft Skill</h4>
+                  <div id="soft-skill-pool" class="tag-pool" aria-label="Daftar soft skill yang dapat dipilih"></div>
+                  <div class="add-custom">
+                    <input id="soft-skill-input" type="text" placeholder="Tambah soft skill..." />
+                    <button type="button" id="add-soft-skill" class="btn btn-secondary">Tambah</button>
+                  </div>
+                  <div>
+                    <h5 class="muted">Dipilih</h5>
+                    <div id="soft-skill-selected" class="tag-selected"></div>
+                  </div>
+                </div>
+              </div>
+              <p class="hint">Klik tag untuk menambah/menghapus. Anda juga bisa menambahkan skill kustom.</p>
+            </fieldset>
+
+             Step 4: Kompetensi & Level 
+            <fieldset class="step" data-step="4" hidden>
+              <legend class="step-title">4. Kompetensi & Tingkat</legend>
+              <p class="muted">Atur skala 0–100 untuk beberapa kompetensi. Anda bisa menyesuaikan sesuai kebutuhan.</p>
+              <div id="competency-list" class="competency-list">
+                 Renders by JS 
+              </div>
+            </fieldset>
+
+             Step 5: Tinjau & Simpan 
+            <fieldset class="step" data-step="5" hidden>
+              <legend class="step-title">5. Tinjau & Simpan</legend>
+              <div id="preview" class="preview card">
+                 Preview content by JS 
+              </div>
+              <div class="actions end">
+                <button type="button" id="save-profile" class="btn btn-primary">Simpan ke Perangkat</button>
+              </div>
+            </fieldset>
+
+            <div class="wizard-actions">
+              <button type="button" id="prev-step" class="btn btn-ghost" disabled>Sebelumnya</button>
+              <button type="button" id="next-step" class="btn btn-primary">Berikutnya</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Collabify. Semua hak dilindungi.</p>
+        <nav aria-label="Tautan footer">
+          <a href="#features">Fitur</a>
+          <a href="#explore">Eksplor</a>
+          <a href="#profile-setup">Profil</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
