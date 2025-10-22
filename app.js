@@ -159,7 +159,7 @@
     const comp = (p.competencies || []).join(" • ")
     const isPerson = p.type === "person"
     const badge = isPerson
-      ? `<span class="badge badge--person">Orang</span>`
+      ? `<span class="badge badge--person">Individu</span>`
       : `<span class="badge badge--company">Perusahaan</span>`
     const rating = typeof p.rating === "number" ? ` • <span aria-label="rating">★ ${p.rating.toFixed(1)}</span>` : ""
     const headline = `${p.name} ${badge}`
